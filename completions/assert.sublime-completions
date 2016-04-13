@@ -1,0 +1,309 @@
+{
+    "scope": "source.js, source.coffee",
+    "completions": [
+        {
+            "trigger": "assert()\t chai",
+            "contents": "assert(${1:expression}, ${2:message})$0"
+        },
+        {
+            "trigger": "chai.fail()\t chai",
+            "contents": "assert.fail(${1:actual}, ${2:expected}, ${3:[message]}, ${4:[operator]})$0"
+        },
+        {
+            "trigger": "chai.isOk()\t chai",
+            "contents": "assert.isOk(${1:object}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotOk()\t chai",
+            "contents": "assert.isNotOk(${1:object}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.equal()\t chai",
+            "contents": "assert.equal(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notEqual()\t chai",
+            "contents": "assert.notEqual(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.strictEqual()\t chai",
+            "contents": "assert.strictEqual(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notStrictEqual()\t chai",
+            "contents": "assert.notStrictEqual(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepEqual()\t chai",
+            "contents": "assert.deepEqual(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepEqual()\t chai",
+            "contents": "assert.notDeepEqual(${1:actual}, ${2:expected}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.isAbove()\t chai",
+            "contents": "assert.isAbove(${1:valueToCheck}, ${2:valueToBeAbove}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.isAtLeast()\t chai",
+            "contents": "assert.isAtLeast(${1:valueToCheck}, ${2:valueToBeAtLeast}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.isBelow()\t chai",
+            "contents": "assert.isBelow(${1:valueToCheck}, ${2:valueToBeBelow}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.isAtMost()\t chai",
+            "contents": "assert.isAtMost(${1:valueToCheck}, ${2:valueToBeAtMost}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.isTrue()\t chai",
+            "contents": "assert.isTrue(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotTrue()\t chai",
+            "contents": "assert.isNotTrue(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isFalse()\t chai",
+            "contents": "assert.isFalse(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotFalse()\t chai",
+            "contents": "assert.isNotFalse(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNull()\t chai",
+            "contents": "assert.isNull(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotNull()\t chai",
+            "contents": "assert.isNotNull(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNaN\t chai",
+            "contents": ".isNaN$0"
+        },
+        {
+            "trigger": "chai.isNotNaN\t chai",
+            "contents": ".isNotNaN$0"
+        },
+        {
+            "trigger": "chai.isUndefined()\t chai",
+            "contents": "assert.isUndefined(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isDefined()\t chai",
+            "contents": "assert.isDefined(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isFunction()\t chai",
+            "contents": "assert.isFunction(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotFunction()\t chai",
+            "contents": "assert.isNotFunction(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isObject()\t chai",
+            "contents": "assert.isObject(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotObject()\t chai",
+            "contents": "assert.isNotObject(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isArray()\t chai",
+            "contents": "assert.isArray(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotArray()\t chai",
+            "contents": "assert.isNotArray(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isString()\t chai",
+            "contents": "assert.isString(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotString()\t chai",
+            "contents": "assert.isNotString(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNumber()\t chai",
+            "contents": "assert.isNumber(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotNumber()\t chai",
+            "contents": "assert.isNotNumber(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isBoolean()\t chai",
+            "contents": "assert.isBoolean(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.isNotBoolean()\t chai",
+            "contents": "assert.isNotBoolean(${1:value}, ${2:[message]})$0"
+        },
+        {
+            "trigger": "chai.typeOf()\t chai",
+            "contents": "assert.typeOf(${1:value}, ${2:name}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notTypeOf()\t chai",
+            "contents": "assert.notTypeOf(${1:value}, ${2:name}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.instanceOf()\t chai",
+            "contents": "assert.instanceOf(${1:object}, ${2:constructor}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notInstanceOf()\t chai",
+            "contents": "assert.notInstanceOf(${1:object}, ${2:constructor}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.include()\t chai",
+            "contents": "assert.include(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notInclude()\t chai",
+            "contents": "assert.notInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.match()\t chai",
+            "contents": "assert.match(${1:value}, ${2:regexp}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notMatch()\t chai",
+            "contents": "assert.notMatch(${1:value}, ${2:regexp}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.property()\t chai",
+            "contents": "assert.property(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notProperty()\t chai",
+            "contents": "assert.notProperty(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepProperty()\t chai",
+            "contents": "assert.deepProperty(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepProperty()\t chai",
+            "contents": "assert.notDeepProperty(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.propertyVal()\t chai",
+            "contents": "assert.propertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.propertyNotVal()\t chai",
+            "contents": "assert.propertyNotVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepPropertyVal()\t chai",
+            "contents": "assert.deepPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepPropertyNotVal()\t chai",
+            "contents": "assert.deepPropertyNotVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.lengthOf()\t chai",
+            "contents": "assert.lengthOf(${1:object}, ${2:length}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.throws()\t chai",
+            "contents": "assert.throws(${1:function}, ${2:[constructor/string/regexp]}, ${3:[string/regexp]}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotThrow()\t chai",
+            "contents": "assert.doesNotThrow(${1:function}, ${2:[constructor/regexp]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.operator()\t chai",
+            "contents": "assert.operator(${1:val1}, ${2:operator}, ${3:val2}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.closeTo()\t chai",
+            "contents": "assert.closeTo(${1:actual}, ${2:expected}, ${3:delta}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.approximately()\t chai",
+            "contents": "assert.approximately(${1:actual}, ${2:expected}, ${3:delta}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.sameMembers()\t chai",
+            "contents": "assert.sameMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.sameDeepMembers()\t chai",
+            "contents": "assert.sameDeepMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.includeMembers()\t chai",
+            "contents": "assert.includeMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.includeDeepMembers()\t chai",
+            "contents": "assert.includeDeepMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.oneOf()\t chai",
+            "contents": "assert.oneOf(${1:inList}, ${2:list}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.changes()\t chai",
+            "contents": "assert.changes(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.doesNotChange()\t chai",
+            "contents": "assert.doesNotChange(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.increases()\t chai",
+            "contents": "assert.increases(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.doesNotIncrease()\t chai",
+            "contents": "assert.doesNotIncrease(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.decreases()\t chai",
+            "contents": "assert.decreases(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.doesNotDecrease()\t chai",
+            "contents": "assert.doesNotDecrease(${1:function}, ${2:object}, ${3:property})$0"
+        },
+        {
+            "trigger": "chai.ifError()\t chai",
+            "contents": "assert.ifError(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isExtensible()\t chai",
+            "contents": "assert.isExtensible(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isNotExtensible()\t chai",
+            "contents": "assert.isNotExtensible(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isSealed()\t chai",
+            "contents": "assert.isSealed(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isNotSealed()\t chai",
+            "contents": "assert.isNotSealed(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isFrozen()\t chai",
+            "contents": "assert.isFrozen(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isNotFrozen()\t chai",
+            "contents": "assert.isNotFrozen(${1:object})$0"
+        }
+    ]
+}

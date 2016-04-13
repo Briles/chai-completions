@@ -1,0 +1,181 @@
+{
+    "scope": "source.js, source.coffee",
+    "completions": [
+        {
+            "trigger": "chai.not\t chai",
+            "contents": ".not$0"
+        },
+        {
+            "trigger": "chai.deep\t chai",
+            "contents": ".deep$0"
+        },
+        {
+            "trigger": "chai.any\t chai",
+            "contents": ".any$0"
+        },
+        {
+            "trigger": "chai.all\t chai",
+            "contents": ".all$0"
+        },
+        {
+            "trigger": "chai.a()\t chai",
+            "contents": ".a(${1:type})$0"
+        },
+        {
+            "trigger": "chai.include()\t chai",
+            "contents": ".include(${1:value})$0"
+        },
+        {
+            "trigger": "chai.ok\t chai",
+            "contents": ".ok$0"
+        },
+        {
+            "trigger": "chai.true\t chai",
+            "contents": ".true$0"
+        },
+        {
+            "trigger": "chai.false\t chai",
+            "contents": ".false$0"
+        },
+        {
+            "trigger": "chai.null\t chai",
+            "contents": ".null$0"
+        },
+        {
+            "trigger": "chai.undefined\t chai",
+            "contents": ".undefined$0"
+        },
+        {
+            "trigger": "chai.NaN\t chai",
+            "contents": ".NaN$0"
+        },
+        {
+            "trigger": "chai.exist\t chai",
+            "contents": ".exist$0"
+        },
+        {
+            "trigger": "chai.empty\t chai",
+            "contents": ".empty$0"
+        },
+        {
+            "trigger": "chai.arguments\t chai",
+            "contents": ".arguments$0"
+        },
+        {
+            "trigger": "chai.equal()\t chai",
+            "contents": ".equal(${1:value})$0"
+        },
+        {
+            "trigger": "chai.eql()\t chai",
+            "contents": ".eql(${1:value})$0"
+        },
+        {
+            "trigger": "chai.above()\t chai",
+            "contents": ".above(${1:value})$0"
+        },
+        {
+            "trigger": "chai.least()\t chai",
+            "contents": ".least(${1:value})$0"
+        },
+        {
+            "trigger": "chai.below()\t chai",
+            "contents": ".below(${1:value})$0"
+        },
+        {
+            "trigger": "chai.most()\t chai",
+            "contents": ".most(${1:value})$0"
+        },
+        {
+            "trigger": "chai.within()\t chai",
+            "contents": ".within(${1:start}, ${2:finish})$0"
+        },
+        {
+            "trigger": "chai.instanceof()\t chai",
+            "contents": ".instanceof(${1:constructor})$0"
+        },
+        {
+            "trigger": "chai.property()\t chai",
+            "contents": ".property(${1:name}, ${2:[value]})$0"
+        },
+        {
+            "trigger": "chai.ownProperty()\t chai",
+            "contents": ".ownProperty(${1:name})$0"
+        },
+        {
+            "trigger": "chai.ownPropertyDescriptor()\t chai",
+            "contents": ".ownPropertyDescriptor(${1:name[}, ${2:descriptor[}, ${3:message]]})$0"
+        },
+        {
+            "trigger": "chai.length\t chai",
+            "contents": ".length$0"
+        },
+        {
+            "trigger": "chai.lengthOf()\t chai",
+            "contents": ".lengthOf(${1:value[}, ${2:message]})$0"
+        },
+        {
+            "trigger": "chai.match()\t chai",
+            "contents": ".match(${1:regexp})$0"
+        },
+        {
+            "trigger": "chai.string()\t chai",
+            "contents": ".string(${1:string})$0"
+        },
+        {
+            "trigger": "chai.keys()\t chai",
+            "contents": ".keys(${1:key1}, ${2:[key2]}, ${3:[…]})$0"
+        },
+        {
+            "trigger": "chai.throw()\t chai",
+            "contents": ".throw(${1:constructor})$0"
+        },
+        {
+            "trigger": "chai.respondTo()\t chai",
+            "contents": ".respondTo(${1:method})$0"
+        },
+        {
+            "trigger": "chai.itself\t chai",
+            "contents": ".itself$0"
+        },
+        {
+            "trigger": "chai.satisfy()\t chai",
+            "contents": ".satisfy(${1:method})$0"
+        },
+        {
+            "trigger": "chai.closeTo()\t chai",
+            "contents": ".closeTo(${1:expected}, ${2:delta})$0"
+        },
+        {
+            "trigger": "chai.members()\t chai",
+            "contents": ".members(${1:set})$0"
+        },
+        {
+            "trigger": "chai.oneOf()\t chai",
+            "contents": ".oneOf(${1:list})$0"
+        },
+        {
+            "trigger": "chai.change()\t chai",
+            "contents": ".change(${1:function})$0"
+        },
+        {
+            "trigger": "chai.increase()\t chai",
+            "contents": ".increase(${1:function})$0"
+        },
+        {
+            "trigger": "chai.decrease()\t chai",
+            "contents": ".decrease(${1:function})$0"
+        },
+        {
+            "trigger": "chai.extensible\t chai",
+            "contents": ".extensible$0"
+        },
+        {
+            "trigger": "chai.sealed\t chai",
+            "contents": ".sealed$0"
+        },
+        {
+            "trigger": "chai.frozen\t chai",
+            "contents": ".frozen$0"
+        }
+    ]
+}

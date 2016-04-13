@@ -1,0 +1,81 @@
+{
+    "scope": "source.js, source.coffee",
+    "completions": [
+        {
+            "trigger": "addChainableMethod()\t chai",
+            "contents": "addChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
+        },
+        {
+            "trigger": "chai.addMethod()\t chai",
+            "contents": ".addMethod(${1:ctx}, ${2:name}, ${3:method})$0"
+        },
+        {
+            "trigger": "addProperty()\t chai",
+            "contents": "addProperty(${1:ctx}, ${2:name}, ${3:getter})$0"
+        },
+        {
+            "trigger": "expectTypes()\t chai",
+            "contents": "expectTypes(${1:obj}, ${2:types})$0"
+        },
+        {
+            "trigger": "flag()\t chai",
+            "contents": "flag(${1:object}, ${2:key}, ${3:[value]})$0"
+        },
+        {
+            "trigger": "getActual()\t chai",
+            "contents": "getActual(${1:object}, ${2:[actual]})$0"
+        },
+        {
+            "trigger": "chai.getEnumerableProperties()\t chai",
+            "contents": ".getEnumerableProperties(${1:object})$0"
+        },
+        {
+            "trigger": "chai.getMessage()\t chai",
+            "contents": ".getMessage(${1:object}, ${2:message}, ${3:negateMessage})$0"
+        },
+        {
+            "trigger": "getName()\t chai",
+            "contents": "getName(${1:func})$0"
+        },
+        {
+            "trigger": "chai.getPathInfo()\t chai",
+            "contents": ".getPathInfo(${1:path}, ${2:object})$0"
+        },
+        {
+            "trigger": "chai.getPathValue()\t chai",
+            "contents": ".getPathValue(${1:path}, ${2:object})$0"
+        },
+        {
+            "trigger": "chai.getProperties()\t chai",
+            "contents": ".getProperties(${1:object})$0"
+        },
+        {
+            "trigger": "chai.hasProperty()\t chai",
+            "contents": ".hasProperty(${1:object}, ${2:name})$0"
+        },
+        {
+            "trigger": "chai.objDisplay()\t chai",
+            "contents": ".objDisplay(${1:object})$0"
+        },
+        {
+            "trigger": "overwriteChainableMethod()\t chai",
+            "contents": "overwriteChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
+        },
+        {
+            "trigger": "overwriteMethod()\t chai",
+            "contents": "overwriteMethod(${1:ctx}, ${2:name}, ${3:fn})$0"
+        },
+        {
+            "trigger": "overwriteProperty()\t chai",
+            "contents": "overwriteProperty(${1:ctx}, ${2:name}, ${3:fn})$0"
+        },
+        {
+            "trigger": "test()\t chai",
+            "contents": "test(${1:object}, ${2:expression})$0"
+        },
+        {
+            "trigger": "transferFlags()\t chai",
+            "contents": "transferFlags(${1:assertion}, ${2:object}, ${3:includeAll = true})$0"
+        }
+    ]
+}
