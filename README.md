@@ -9,7 +9,7 @@ Theme used in screenshot is [gruvbox](https://packagecontrol.io/packages/gruvbox
 
 To trigger Method or Property completions, type `chai` followed by what your trying to complete.
 
-Function completions can be triggered without typing `chai`;
+Function completions can be triggered without typing `chai`.
 
 Example:
 
