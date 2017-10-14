@@ -2,28 +2,36 @@
     "scope": "source.js, source.coffee",
     "completions": [
         {
-            "trigger": "addChainableMethod()\t chai",
-            "contents": "addChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
+            "trigger": "chai.addChainableMethod()\t chai",
+            "contents": ".addChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
+        },
+        {
+            "trigger": "chai.addLengthGuard()\t chai",
+            "contents": ".addLengthGuard(${1:fn}, ${2:assertionName}, ${3:isChainable})$0"
         },
         {
             "trigger": "chai.addMethod()\t chai",
             "contents": ".addMethod(${1:ctx}, ${2:name}, ${3:method})$0"
         },
         {
-            "trigger": "addProperty()\t chai",
-            "contents": "addProperty(${1:ctx}, ${2:name}, ${3:getter})$0"
+            "trigger": "chai.addProperty()\t chai",
+            "contents": ".addProperty(${1:ctx}, ${2:name}, ${3:getter})$0"
         },
         {
-            "trigger": "expectTypes()\t chai",
-            "contents": "expectTypes(${1:obj}, ${2:types})$0"
+            "trigger": "chai.compareByInspect()\t chai",
+            "contents": ".compareByInspect(${1:mixed}, ${2:mixed})$0"
         },
         {
-            "trigger": "flag()\t chai",
-            "contents": "flag(${1:object}, ${2:key}, ${3:[value]})$0"
+            "trigger": "chai.expectTypes()\t chai",
+            "contents": ".expectTypes(${1:obj}, ${2:types})$0"
         },
         {
-            "trigger": "getActual()\t chai",
-            "contents": "getActual(${1:object}, ${2:[actual]})$0"
+            "trigger": "chai.flag()\t chai",
+            "contents": ".flag(${1:object}, ${2:key}, ${3:[value]})$0"
+        },
+        {
+            "trigger": "chai.getActual()\t chai",
+            "contents": ".getActual(${1:object}, ${2:[actual]})$0"
         },
         {
             "trigger": "chai.getEnumerableProperties()\t chai",
@@ -34,48 +42,92 @@
             "contents": ".getMessage(${1:object}, ${2:message}, ${3:negateMessage})$0"
         },
         {
-            "trigger": "getName()\t chai",
-            "contents": "getName(${1:func})$0"
+            "trigger": "chai.getOwnEnumerableProperties()\t chai",
+            "contents": ".getOwnEnumerableProperties(${1:object})$0"
         },
         {
-            "trigger": "chai.getPathInfo()\t chai",
-            "contents": ".getPathInfo(${1:path}, ${2:object})$0"
-        },
-        {
-            "trigger": "chai.getPathValue()\t chai",
-            "contents": ".getPathValue(${1:path}, ${2:object})$0"
+            "trigger": "chai.getOwnEnumerablePropertySymbols()\t chai",
+            "contents": ".getOwnEnumerablePropertySymbols(${1:object})$0"
         },
         {
             "trigger": "chai.getProperties()\t chai",
             "contents": ".getProperties(${1:object})$0"
         },
         {
-            "trigger": "chai.hasProperty()\t chai",
-            "contents": ".hasProperty(${1:object}, ${2:name})$0"
+            "trigger": "chai.inspect()\t chai",
+            "contents": ".inspect(${1:obj}, ${2:[showHidden]}, ${3:[depth]}, ${4:[colors]})$0"
+        },
+        {
+            "trigger": "chai.isProxyEnabled()\t chai",
+            "contents": ".isProxyEnabled(~#~)$0"
         },
         {
             "trigger": "chai.objDisplay()\t chai",
             "contents": ".objDisplay(${1:object})$0"
         },
         {
-            "trigger": "overwriteChainableMethod()\t chai",
-            "contents": "overwriteChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
+            "trigger": "chai.overwriteChainableMethod()\t chai",
+            "contents": ".overwriteChainableMethod(${1:ctx}, ${2:name}, ${3:method}, ${4:chainingBehavior})$0"
         },
         {
-            "trigger": "overwriteMethod()\t chai",
-            "contents": "overwriteMethod(${1:ctx}, ${2:name}, ${3:fn})$0"
+            "trigger": "chai.overwriteMethod()\t chai",
+            "contents": ".overwriteMethod(${1:ctx}, ${2:name}, ${3:fn})$0"
         },
         {
-            "trigger": "overwriteProperty()\t chai",
-            "contents": "overwriteProperty(${1:ctx}, ${2:name}, ${3:fn})$0"
+            "trigger": "chai.overwriteProperty()\t chai",
+            "contents": ".overwriteProperty(${1:ctx}, ${2:name}, ${3:fn})$0"
         },
         {
-            "trigger": "test()\t chai",
-            "contents": "test(${1:object}, ${2:expression})$0"
+            "trigger": "chai.proxify()\t chai",
+            "contents": ".proxify(${1:object})$0"
         },
         {
-            "trigger": "transferFlags()\t chai",
-            "contents": "transferFlags(${1:assertion}, ${2:object}, ${3:includeAll = true})$0"
+            "trigger": "chai.test()\t chai",
+            "contents": ".test(${1:object}, ${2:expression})$0"
+        },
+        {
+            "trigger": "chai.transferFlags()\t chai",
+            "contents": ".transferFlags(${1:assertion}, ${2:object}, ${3:includeAll = true})$0"
+        },
+        {
+            "trigger": "chai.compatibleInstance()\t chai",
+            "contents": ".compatibleInstance(${1:thrown}, ${2:errorLike})$0"
+        },
+        {
+            "trigger": "chai.compatibleConstructor()\t chai",
+            "contents": ".compatibleConstructor(${1:thrown}, ${2:errorLike})$0"
+        },
+        {
+            "trigger": "chai.compatibleMessage()\t chai",
+            "contents": ".compatibleMessage(${1:thrown}, ${2:errMatcher})$0"
+        },
+        {
+            "trigger": "chai.getFunctionName()\t chai",
+            "contents": ".getFunctionName(${1:constructorFn})$0"
+        },
+        {
+            "trigger": "chai.getConstructorName()\t chai",
+            "contents": ".getConstructorName(${1:errorLike})$0"
+        },
+        {
+            "trigger": "chai.getMessage()\t chai",
+            "contents": ".getMessage(${1:errorLike})$0"
+        },
+        {
+            "trigger": "chai.getFuncName()\t chai",
+            "contents": ".getFuncName(${1:constructorFn})$0"
+        },
+        {
+            "trigger": "chai.hasProperty()\t chai",
+            "contents": ".hasProperty(${1:object}, ${2:name})$0"
+        },
+        {
+            "trigger": "chai.getPathInfo()\t chai",
+            "contents": ".getPathInfo(${1:object}, ${2:path})$0"
+        },
+        {
+            "trigger": "chai.getPathValue()\t chai",
+            "contents": ".getPathValue(${1:object}, ${2:path})$0"
         }
     ]
 }

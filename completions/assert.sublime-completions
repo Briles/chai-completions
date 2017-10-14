@@ -90,6 +90,14 @@
             "contents": ".isNotNaN$0"
         },
         {
+            "trigger": "chai.exists\t chai",
+            "contents": ".exists$0"
+        },
+        {
+            "trigger": "chai.notExists\t chai",
+            "contents": ".notExists$0"
+        },
+        {
             "trigger": "chai.isUndefined()\t chai",
             "contents": "assert.isUndefined(${1:value}, ${2:[message]})$0"
         },
@@ -138,6 +146,10 @@
             "contents": "assert.isNotNumber(${1:value}, ${2:[message]})$0"
         },
         {
+            "trigger": "chai.isFinite()\t chai",
+            "contents": "assert.isFinite(${1:value}, ${2:[message]})$0"
+        },
+        {
             "trigger": "chai.isBoolean()\t chai",
             "contents": "assert.isBoolean(${1:value}, ${2:[message]})$0"
         },
@@ -170,6 +182,46 @@
             "contents": "assert.notInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
         },
         {
+            "trigger": "chai.deepInclude()\t chai",
+            "contents": "assert.deepInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepInclude()\t chai",
+            "contents": "assert.notDeepInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.nestedInclude()\t chai",
+            "contents": "assert.nestedInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notNestedInclude()\t chai",
+            "contents": "assert.notNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepNestedInclude()\t chai",
+            "contents": "assert.deepNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepNestedInclude()\t chai",
+            "contents": "assert.notDeepNestedInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.ownInclude()\t chai",
+            "contents": "assert.ownInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notOwnInclude()\t chai",
+            "contents": "assert.notOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepOwnInclude()\t chai",
+            "contents": "assert.deepOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepOwnInclude()\t chai",
+            "contents": "assert.notDeepOwnInclude(${1:haystack}, ${2:needle}, ${3:[message]})$0"
+        },
+        {
             "trigger": "chai.match()\t chai",
             "contents": "assert.match(${1:value}, ${2:regexp}, ${3:[message]})$0"
         },
@@ -186,40 +238,96 @@
             "contents": "assert.notProperty(${1:object}, ${2:property}, ${3:[message]})$0"
         },
         {
-            "trigger": "chai.deepProperty()\t chai",
-            "contents": "assert.deepProperty(${1:object}, ${2:property}, ${3:[message]})$0"
-        },
-        {
-            "trigger": "chai.notDeepProperty()\t chai",
-            "contents": "assert.notDeepProperty(${1:object}, ${2:property}, ${3:[message]})$0"
-        },
-        {
             "trigger": "chai.propertyVal()\t chai",
             "contents": "assert.propertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
         },
         {
-            "trigger": "chai.propertyNotVal()\t chai",
-            "contents": "assert.propertyNotVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+            "trigger": "chai.notPropertyVal()\t chai",
+            "contents": "assert.notPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
         },
         {
             "trigger": "chai.deepPropertyVal()\t chai",
             "contents": "assert.deepPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
         },
         {
-            "trigger": "chai.deepPropertyNotVal()\t chai",
-            "contents": "assert.deepPropertyNotVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+            "trigger": "chai.notDeepPropertyVal()\t chai",
+            "contents": "assert.notDeepPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.nestedProperty()\t chai",
+            "contents": "assert.nestedProperty(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notNestedProperty()\t chai",
+            "contents": "assert.notNestedProperty(${1:object}, ${2:property}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.nestedPropertyVal()\t chai",
+            "contents": "assert.nestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.notNestedPropertyVal()\t chai",
+            "contents": "assert.notNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.deepNestedPropertyVal()\t chai",
+            "contents": "assert.deepNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.notDeepNestedPropertyVal()\t chai",
+            "contents": "assert.notDeepNestedPropertyVal(${1:object}, ${2:property}, ${3:value}, ${4:[message]})$0"
         },
         {
             "trigger": "chai.lengthOf()\t chai",
             "contents": "assert.lengthOf(${1:object}, ${2:length}, ${3:[message]})$0"
         },
         {
+            "trigger": "chai.hasAnyKeys()\t chai",
+            "contents": "assert.hasAnyKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.hasAllKeys()\t chai",
+            "contents": "assert.hasAllKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.containsAllKeys()\t chai",
+            "contents": "assert.containsAllKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotHaveAnyKeys()\t chai",
+            "contents": "assert.doesNotHaveAnyKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotHaveAllKeys()\t chai",
+            "contents": "assert.doesNotHaveAllKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.hasAnyDeepKeys()\t chai",
+            "contents": "assert.hasAnyDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.hasAllDeepKeys()\t chai",
+            "contents": "assert.hasAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.containsAllDeepKeys()\t chai",
+            "contents": "assert.containsAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotHaveAnyDeepKeys()\t chai",
+            "contents": "assert.doesNotHaveAnyDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotHaveAllDeepKeys()\t chai",
+            "contents": "assert.doesNotHaveAllDeepKeys(${1:object}, ${2:[keys]}, ${3:[message]})$0"
+        },
+        {
             "trigger": "chai.throws()\t chai",
-            "contents": "assert.throws(${1:function}, ${2:[constructor/string/regexp]}, ${3:[string/regexp]}, ${4:[message]})$0"
+            "contents": "assert.throws(${1:fn}, ${2:[errorLike/string/regexp]}, ${3:[string/regexp]}, ${4:[message]})$0"
         },
         {
             "trigger": "chai.doesNotThrow()\t chai",
-            "contents": "assert.doesNotThrow(${1:function}, ${2:[constructor/regexp]}, ${3:[message]})$0"
+            "contents": "assert.doesNotThrow(${1:fn}, ${2:[errorLike/string/regexp]}, ${3:[string/regexp]}, ${4:[message]})$0"
         },
         {
             "trigger": "chai.operator()\t chai",
@@ -238,16 +346,64 @@
             "contents": "assert.sameMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
         },
         {
+            "trigger": "chai.notSameMembers()\t chai",
+            "contents": "assert.notSameMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
             "trigger": "chai.sameDeepMembers()\t chai",
             "contents": "assert.sameDeepMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notSameDeepMembers()\t chai",
+            "contents": "assert.notSameDeepMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.sameOrderedMembers()\t chai",
+            "contents": "assert.sameOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notSameOrderedMembers()\t chai",
+            "contents": "assert.notSameOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.sameDeepOrderedMembers()\t chai",
+            "contents": "assert.sameDeepOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notSameDeepOrderedMembers()\t chai",
+            "contents": "assert.notSameDeepOrderedMembers(${1:set1}, ${2:set2}, ${3:[message]})$0"
         },
         {
             "trigger": "chai.includeMembers()\t chai",
             "contents": "assert.includeMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
         },
         {
+            "trigger": "chai.notIncludeMembers()\t chai",
+            "contents": "assert.notIncludeMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
             "trigger": "chai.includeDeepMembers()\t chai",
             "contents": "assert.includeDeepMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notIncludeDeepMembers()\t chai",
+            "contents": "assert.notIncludeDeepMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.includeOrderedMembers()\t chai",
+            "contents": "assert.includeOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notIncludeOrderedMembers()\t chai",
+            "contents": "assert.notIncludeOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.includeDeepOrderedMembers()\t chai",
+            "contents": "assert.includeDeepOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
+        },
+        {
+            "trigger": "chai.notIncludeDeepOrderedMembers()\t chai",
+            "contents": "assert.notIncludeDeepOrderedMembers(${1:superset}, ${2:subset}, ${3:[message]})$0"
         },
         {
             "trigger": "chai.oneOf()\t chai",
@@ -255,27 +411,55 @@
         },
         {
             "trigger": "chai.changes()\t chai",
-            "contents": "assert.changes(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.changes(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.changesBy()\t chai",
+            "contents": "assert.changesBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
         },
         {
             "trigger": "chai.doesNotChange()\t chai",
-            "contents": "assert.doesNotChange(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.doesNotChange(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.changesButNotBy()\t chai",
+            "contents": "assert.changesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
         },
         {
             "trigger": "chai.increases()\t chai",
-            "contents": "assert.increases(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.increases(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.increasesBy()\t chai",
+            "contents": "assert.increasesBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
         },
         {
             "trigger": "chai.doesNotIncrease()\t chai",
-            "contents": "assert.doesNotIncrease(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.doesNotIncrease(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.increasesButNotBy()\t chai",
+            "contents": "assert.increasesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
         },
         {
             "trigger": "chai.decreases()\t chai",
-            "contents": "assert.decreases(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.decreases(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.decreasesBy()\t chai",
+            "contents": "assert.decreasesBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
         },
         {
             "trigger": "chai.doesNotDecrease()\t chai",
-            "contents": "assert.doesNotDecrease(${1:function}, ${2:object}, ${3:property})$0"
+            "contents": "assert.doesNotDecrease(${1:function}, ${2:object}, ${3:property}, ${4:[message]})$0"
+        },
+        {
+            "trigger": "chai.doesNotDecreaseBy()\t chai",
+            "contents": "assert.doesNotDecreaseBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
+        },
+        {
+            "trigger": "chai.decreasesButNotBy()\t chai",
+            "contents": "assert.decreasesButNotBy(${1:function}, ${2:object}, ${3:property}, ${4:delta}, ${5:[message]})$0"
         },
         {
             "trigger": "chai.ifError()\t chai",
@@ -304,6 +488,14 @@
         {
             "trigger": "chai.isNotFrozen()\t chai",
             "contents": "assert.isNotFrozen(${1:object})$0"
+        },
+        {
+            "trigger": "chai.isEmpty()\t chai",
+            "contents": "assert.isEmpty(${1:target})$0"
+        },
+        {
+            "trigger": "chai.isNotEmpty()\t chai",
+            "contents": "assert.isNotEmpty(${1:target})$0"
         }
     ]
 }
